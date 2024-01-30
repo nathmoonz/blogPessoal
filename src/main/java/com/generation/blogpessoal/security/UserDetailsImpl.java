@@ -53,7 +53,7 @@ public class UserDetailsImpl implements UserDetails{
 	@Override
 	public boolean isAccountNonLocked() {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override

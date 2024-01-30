@@ -44,7 +44,7 @@ public class Postagem {
 	private Usuario usuario;
 
 	public Long getId() {
-		return id;
+		return this.id;
 	}
 
 	public void setId(Long id) {
@@ -52,7 +52,7 @@ public class Postagem {
 	}
 
 	public String getTitulo() {
-		return titulo;
+		return this.titulo;
 	}
 
 	public void setTitulo(String titulo) {

@@ -22,9 +22,9 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	// injeção de dependenvias para conseguir consultar no banco
 
 	@Override
-	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		// TODO Auto-generated method stub
-		Optional<Usuario> usuario = usuarioRepository.findByUsuario(username);
+	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
+	
+		Optional<Usuario> usuario = usuarioRepository.findByUsuario(userName);
 		if(usuario.isPresent())
 			return new UserDetailsImpl(usuario.get());
 		else
